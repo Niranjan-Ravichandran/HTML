@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* input,
+        label {
+            display: block;
+        } */
+    </style>
+</head>
+
+<body>
+    <form name="registerForm">
+        <h4>Register for Online Trainings</h4>
+
+        <!-- input fields types text/password/email/number  -->
+        <label for="userName">Username:</label>
+        <input id="userName" type="text" placeholder="Enter username" required pattern="[A-Z]" /> <br />
+        Password:<input type="password" placeholder="Enter password" /> <br />
+        Email:<input type="email" placeholder="Enter Email" /> <br />
+        Phone Number:<input type="number" placeholder="Enter Phone Number" min="10" max="12" /> <br />
+        Experience :<input type="number" placeholder="Enter Experience" step="2" /> <br />
+        <!-- input fields type checkbox -->
+        Select technologies needed:
+        <input type="checkbox" value="HTML" checked /> HTML
+        <input type="checkbox" value="CSS" /> CSS
+        <input type="checkbox" value="JS" checked/> JS<br /><br />
+
+        input field type radio button 
+         Select training mode:
+        <input type="radio" name="training" value="classroom" checked /> Classroom
+        <input type="radio" name="training" value="VCR" /> VCR <br />
+
+        <input type="radio" name="training1" value="classroom" checked /> Classroom1
+        <input type="radio" name="training1" value="VCR" /> VCR1 <br />
+        Select a file: <input type="file">
+        <!-- textarea -->
+        Write your comments: <textarea rows="4" cols="10" >Default value</textarea><br/>
+        URL: <input type="url"placeholder="Enter URL"/><br/>
+        
+            <!-- input field type color -->
+            <input type="color"/> color
+
+            <!-- input field type date -->
+            <input type="date"/> date
+            <!-- input field type month -->
+            <input type="month"/> month
+            <!-- input field type week -->
+            <input type="week"/> week
+            <!-- input field type datetime -->
+            <input type="datetime"/>datetime
+           
+            <!-- input field type search -->
+            <input type="search"/> search
+            Select your skills:
+            <select multiple>
+                <option value="HTML">HTML </option>
+                <option value="CSS">CSS </option>
+                <option value="JS">JS </option>
+                <option value="WD" selected>Web Developer </option>                
+            </select>  <br/> <br/>
+            Country: <input list="countries">
+            <datalist id="countries">
+                <option value="India">
+                    <option value="France">
+                        <option value="Singapore">
+                            <option value="Thailand">
+                                <option value="United Arab Emirates">
+                                    <option value="United States of America">
+            </datalist>
+            
+             <!-- input field type range -->
+             <input type="range" min="10" max="20"/>Volume
+
+             <!-- input field type meter -->
+             Disk usage: <meter min="0" max="100" value="50"></meter>
+ 
+              <!-- input field type progress -->
+             Task completed: <progress min="0" max="100" value="50">50 of 100</progress>
+ 
+ 
+             Enter the URL of the certified training if any: <input type="url" /> <br/> <br/>
+ 
+             <!-- input field type button -->
+             <input type="button" value="Click here to see the available trainings"/> &nbsp;&nbsp;
+        <input type="submit" formmethod="POST"><br />
+
+    </form>
+</body>
+
+</html>

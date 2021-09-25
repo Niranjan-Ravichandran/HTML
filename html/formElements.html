@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            input,label{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <h4>Register for Online Trainings</h4>
+
+            <!-- input fields types text/password/email/number  -->
+            Username:<input type="text"/> <br/>
+            Password:<input type="password"/> <br/>
+            Contact:<input type="number" /> <br/><br/>
+            Email:<input type="email"/> <br/><br/>
+            Age:<input type="number" min="18" max="18"/> <br/><br/>
+            <!-- input fields types with predefined value  -->
+            Name: <input type="text" value="Predefined value" >
+
+            <!-- input fields type checkbox -->
+            Select technologies needed: 
+            <input type="checkbox" value="HTML" checked /> HTML
+            <input type="checkbox" value="CSS"/> CSS 
+            <input type="checkbox" value="JS"/> JS<br/><br/>
+
+            <!-- input field type radio button -->
+            Select training mode: 
+            <input type="radio" name="training" value="classroom" checked /> Classroom
+            <input type="radio" name="training" value="VCR" /> VCR <br/>
+
+            <!-- input field type file button -->
+            Select a file: <input type="file">
+
+             <!-- textarea -->
+            Write your comments: <textarea rows="4" cols="10" >Default value</textarea>
+
+            <!-- input field type hidden -->
+            <input type="hidden" name="language" value="english" /> <br/><br/>
+            
+            <!-- input field type color -->
+            <input type="color"/> color
+
+            <!-- input field type date -->
+            <input type="date"/> date
+            <!-- input field type month -->
+            <input type="month"/> month
+            <!-- input field type week -->
+            <input type="week"/> week
+            <!-- input field type datetime -->
+            <input type="datetime"/>datetime
+           
+            <!-- input field type search -->
+            <input type="search"/> search
+
+            <label for="name">Name label</label>
+            <input type="text" id="name" />
+
+             <!-- input field type range -->
+            <input type="range" min="10" max="20"/>Volume
+
+            <!-- input field type meter -->
+            Disk usage: <meter min="0" max="100" value="50"></meter>
+
+             <!-- input field type progress -->
+            Task completed: <progress min="0" max="100" value="50">50 of 100</progress>
+
+
+            Enter the URL of the certified training if any: <input type="url" /> <br/> <br/>
+
+            <!-- input field type button -->
+            <input type="button" value="Click here to see the available trainings"/> &nbsp;&nbsp;
+            <!-- input field type submit -->
+            <input type="submit"/> &nbsp;&nbsp;
+
+        </form>
+    </body>
+</html>
