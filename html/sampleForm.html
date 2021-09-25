@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <h2>Sign Up</h2>
+
+    <form onsubmit="register()" id="registerForm">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" pattern="[A-Za-z]" ><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" autofocus><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" autocomplete="on"><br><br>
+        <label for="url">LinkedIn URL:</label><br>
+        <input type="url" id="url" , name="url"><br>
+        <label for="age">Age:</label><br>
+        <input type="number" min="18" max="40" id="age" name="age"><br>
+        <label for="age">Job Experience:</label><br>
+        <input type="number" min="0" max="20" id="job" name="job" , step="2"><br>
+        Select your skills:
+        <select multiple>
+            <option value="HTML">HTML </option>
+            <option value="CSS">CSS </option>
+            <option value="JS">JS </option>
+            <option value="WD" selected>Web Developer </option>                
+        </select>  <br/> <br/>
+        <input type="checkbox" required /> I ,agree to terms and conditions:
+        <input type="submit" value="Submit">
+
+
+    </form>
+
+
+</body>
+
+</html>
